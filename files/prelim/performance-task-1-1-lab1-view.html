@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Task 1.1 (Lab 1)</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --surface: #ffffff;
+      --text: #101828;
+      --muted: #5b6470;
+      --line: #d9dde3;
+      --accent: #101828;
+      --shadow: 0 14px 36px rgba(16, 24, 40, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(980px, calc(100% - 1.5rem));
+      margin: 0 auto;
+      padding: 1rem 0 2rem;
+    }
+
+    .hero,
+    .step-card {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 1.25rem 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.4rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+
+    h1 {
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .steps {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .step-card {
+      padding: 1rem;
+    }
+
+    .step-title {
+      margin-bottom: 0.85rem;
+      font-size: 1.35rem;
+    }
+
+    .image-grid {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .image-grid.double {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .image-grid.triple {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .shot {
+      padding: 0.5rem;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fbfcfd;
+    }
+
+    .shot img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .image-grid.double,
+      .image-grid.triple {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <p class="eyebrow">Prelim PT 1</p>
+      <h1>Performance Task 1.1 (Lab 1)</h1>
+      <p>A viewable copy of the uploaded work.</p>
+    </section>
+
+    <section class="steps">
+      <article class="step-card">
+        <h2 class="step-title">Step 1</h2>
+        <div class="image-grid">
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image1.png" alt="Step 1 screenshot" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="step-card">
+        <h2 class="step-title">Step 2</h2>
+        <div class="image-grid">
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image2.png" alt="Step 2 screenshot" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="step-card">
+        <h2 class="step-title">Step 3</h2>
+        <div class="image-grid">
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image3.png" alt="Step 3 screenshot" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="step-card">
+        <h2 class="step-title">Step 4</h2>
+        <div class="image-grid">
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image4.png" alt="Step 4 screenshot" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="step-card">
+        <h2 class="step-title">Step 5</h2>
+        <div class="image-grid double">
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image5.png" alt="Step 5 screenshot 1" loading="lazy"></div>
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image6.png" alt="Step 5 screenshot 2" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="step-card">
+        <h2 class="step-title">Step 5 (continued)</h2>
+        <div class="image-grid triple">
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image4.png" alt="Step 5 continued screenshot 1" loading="lazy"></div>
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image6.png" alt="Step 5 continued screenshot 2" loading="lazy"></div>
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image5.png" alt="Step 5 continued screenshot 3" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="step-card">
+        <h2 class="step-title">Step 6</h2>
+        <div class="image-grid double">
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image7.png" alt="Step 6 screenshot 1" loading="lazy"></div>
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image8.png" alt="Step 6 screenshot 2" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="step-card">
+        <h2 class="step-title">Step 7</h2>
+        <div class="image-grid triple">
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image9.png" alt="Step 7 screenshot 1" loading="lazy"></div>
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image10.png" alt="Step 7 screenshot 2" loading="lazy"></div>
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image11.png" alt="Step 7 screenshot 3" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="step-card">
+        <h2 class="step-title">Step 8</h2>
+        <div class="image-grid">
+          <div class="shot"><img src="performance-task-1-1-lab1-assets/image12.png" alt="Step 8 screenshot" loading="lazy"></div>
+        </div>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
